@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #344955;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.AddCustomerController">
+    <children>
+      <Button fx:id="CloseButton" layoutX="531.0" layoutY="359.0" mnemonicParsing="false" onAction="#closeHandler" text="Cancel" />
+      <Label layoutX="14.0" layoutY="16.0" text="Add Customer" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="IdField" disable="true" layoutX="220.0" layoutY="45.0" prefHeight="27.0" prefWidth="104.0" promptText="Auto Generated" />
+      <TextField fx:id="NameField" layoutX="220.0" layoutY="85.0" promptText="Customer Name" />
+      <TextField fx:id="AddressField" layoutX="220.0" layoutY="131.0" promptText="Customer Address" />
+      <TextField fx:id="PhoneField" layoutX="220.0" layoutY="217.0" prefHeight="27.0" prefWidth="149.0" promptText="Customer Phone" />
+      <Label layoutX="144.0" layoutY="50.0" text="Customer ID" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label layoutX="174.0" layoutY="90.0" text="Name" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label layoutX="167.0" layoutY="136.0" text="Address" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label layoutX="124.0" layoutY="222.0" text="Phone Number" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Button fx:id="SaveButton" layoutX="467.0" layoutY="359.0" mnemonicParsing="false" onAction="#saveHandler" text="Save" />
+      <TextField fx:id="PostalField" layoutX="220.0" layoutY="173.0" promptText="Customer Postal Code" />
+      <Label layoutX="147.0" layoutY="178.0" text="Postal Code" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label layoutX="257.0" layoutY="19.0" text="* Required" textFill="RED" />
+      <Label layoutX="384.0" layoutY="90.0" text="*" textFill="RED" />
+      <Label layoutX="384.0" layoutY="136.0" text="*" textFill="RED" />
+      <Label layoutX="384.0" layoutY="222.0" text="*" textFill="RED" />
+      <Label layoutX="384.0" layoutY="178.0" text="*" textFill="RED" />
+      <Label layoutX="384.0" layoutY="267.0" text="*" textFill="RED" />
+      <ComboBox fx:id="FirstDivisionCombo" layoutX="220.0" layoutY="304.0" prefWidth="150.0" promptText="First Level Division" />
+      <ComboBox fx:id="CountryCombo" layoutX="220.0" layoutY="263.0" onAction="#initializeCity" prefWidth="150.0" promptText="Country" />
+      <Label layoutX="384.0" layoutY="308.0" text="*" textFill="RED" />
+   </children> 
+</AnchorPane>
