@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #344955;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ReportsController">
+   <children>
+      <HBox layoutX="14.0" layoutY="335.0" prefHeight="50.0" prefWidth="477.0" />
+      <Button fx:id="BackButton" layoutX="514.0" layoutY="335.0" mnemonicParsing="false" onAction="#backHandler" prefHeight="26.0" prefWidth="71.0" text="Back" />
+      <TextArea fx:id="ReportsTextArea" editable="false" layoutX="23.0" layoutY="73.0" prefHeight="288.0" prefWidth="468.0" wrapText="true" />
+      <Button fx:id="AppointmentReportButton" alignment="CENTER" layoutX="15.0" layoutY="14.0" mnemonicParsing="false" onAction="#setAppointments" prefHeight="50.0" prefWidth="136.0" text="Appointments by Type and Month" textOverrun="CLIP" wrapText="true">
+         <font>
+            <Font name="SansSerif Regular" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="ContactScheduleButton" layoutX="175.0" layoutY="14.0" mnemonicParsing="false" onAction="#setContactSchedule" prefHeight="50.0" prefWidth="136.0" text="Contact Schedule " textOverrun="CLIP" wrapText="true">
+         <font>
+            <Font name="SansSerif Regular" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="minsPerContactButton" layoutX="338.0" layoutY="14.0" mnemonicParsing="false" onAction="#getMinutesScheduled" prefHeight="50.0" prefWidth="136.0" text="Minutes scheduled per Contact " textOverrun="CLIP" wrapText="true">
+         <font>
+            <Font name="SansSerif Regular" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
